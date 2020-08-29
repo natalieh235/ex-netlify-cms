@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master
 media_folder: public/img
 public_folder: img
@@ -12,11 +12,21 @@ collections:
       file: "content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
+        - label: "Frames"
+          name: "frames"
+          widget: "list"
           fields:
-            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Header", name: "header", widget: "string"}
+            - { label: "Subtitle", name: "subtitle", widget: "string"}
+            - { label: "Button", name: "button", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
+            - { label: "Image", name: "img", widget: "image"}
+    - label: "About"
+      name: "about"
+      file: "content/about.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Body", name: "body", widget: "markdown"}
+    
+    
+

@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
+import { attributes, react as Content} from '../content/about.md';
 
-export default class Home extends Component {
-
+export default class About extends Component {
     render() {
         let { title, frames } = attributes
         return (
@@ -20,7 +19,7 @@ export default class Home extends Component {
                             <h2>{frame.header}</h2>
                             <p>{frame.description}</p>
                             <button>{frame.button}</button>
-                            <hr />
+                            <br />
                         </>
                     ))}
                 </article>
