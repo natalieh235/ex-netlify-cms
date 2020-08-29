@@ -25,8 +25,11 @@ collections:
       name: "about"
       file: "content/about.md"
       fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Body", name: "body", widget: "markdown"}
-    
+        - { label: "Header", name: "header", widget: "string"}
+        - { label: "Subtitle", name: "subtitle", widget: "string"}
+        - { label: "Button", name: "button", widget: "string"}
+        - { label: "Description", name: "description", widget: "text"}
+        - { label: "Image", name: "img", widget: "image"}
+
     
 
