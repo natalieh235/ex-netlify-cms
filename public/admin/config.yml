@@ -14,7 +14,7 @@ collections:
         - { label: "Title", name: "title", widget: "string"}
         - label: "Frames"
           name: "frames"
-          widget: "list"
+          widget: list
           fields:
             - { label: "Header", name: "header", widget: "string"}
             - { label: "Subtitle", name: "subtitle", widget: "string"}
@@ -25,11 +25,16 @@ collections:
       name: "about"
       file: "content/about.md"
       fields:
-        - { label: "Header", name: "header", widget: "string"}
-        - { label: "Subtitle", name: "subtitle", widget: "string"}
-        - { label: "Button", name: "button", widget: "string"}
-        - { label: "Description", name: "description", widget: "text"}
-        - { label: "Image", name: "img", widget: "image"}
+        - { label: "Title", name: "title", widget: "string"}
+        - label: "Frames"
+          name: "frames"
+          widget: list
+          fields:
+            - { label: "Header", name: "header", widget: "string"}
+            - { label: "Subtitle", name: "subtitle", widget: "string"}
+            - { label: "Button", name: "button", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}
+            - { label: "Image", name: "img", widget: "image"}
 
     
 
