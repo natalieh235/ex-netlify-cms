@@ -4,13 +4,11 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
+  - label: "Page"
+    name: "page"
+    folder: "pages/posts"
+    create: true
+    fields:
         - { label: "Title", name: "title", widget: "string"}
         - label: "Frames"
           name: "frames"
@@ -21,20 +19,7 @@ collections:
             - { label: "Button", name: "button", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
             - { label: "Image", name: "img", widget: "image"}
-    - label: "About"
-      name: "about"
-      file: "content/about.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - label: "Frames"
-          name: "frames"
-          widget: list
-          fields:
-            - { label: "Header", name: "header", widget: "string"}
-            - { label: "Subtitle", name: "subtitle", widget: "string"}
-            - { label: "Button", name: "button", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
-            - { label: "Image", name: "img", widget: "image"}
+          
 
     
 
