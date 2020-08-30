@@ -4,9 +4,9 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
-  - label: "Page"
-    name: "page"
-    folder: "content"
+  - label: "Posts"
+    name: "posts"
+    folder: "/content"
     create: true
     fields:
         - { label: "Title", name: "title", widget: "string"}
