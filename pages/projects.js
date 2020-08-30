@@ -1,15 +1,13 @@
 import Head from 'next/head'
-import { attributes, html as Content} from '../content/about.md';
+import { Component } from 'react'
+import { attributes, react as Content } from '../content/projects.md';
+import Layout from '../components/layout'
 import Frames from '../components/Frames'
-//import { useRouter } from 'next/router'
 
-export default function About(){
-    // const router = useRouter()
-    // const { about } = router.query
-    // console.log(about)
+export default function projects() {
 
     let { title, frames } = attributes
-    return (
+    return(
         <>
             <Head>
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -17,9 +15,7 @@ export default function About(){
             <article>
                 <h1>{title}</h1>
                 <Frames frames={frames}/>
-                
             </article>
         </>
     )
 }
-
