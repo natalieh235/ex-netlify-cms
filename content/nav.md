@@ -4,7 +4,7 @@ links:
     - name: About Us
       path: "/about"
     - name: Projects
-      path: "/about"
+      path: "/projects"
     - name: Contact Us
       path: "/about"
     - name: Blog

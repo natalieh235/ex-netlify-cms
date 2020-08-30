@@ -1,6 +1,6 @@
 ---
 title: Project Dashboard
-links: 
+projects: 
     - name: Ex
       path: "/projects/ex"
 

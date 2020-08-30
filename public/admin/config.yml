@@ -46,14 +46,22 @@ collections:
       name: "nav"
       file: "content/nav.md"
       fields:
-        - { label: "Name", name: "name", widget: "string"}
-        - { label: "Path", name: "path", widget: "string" }
+        - label: "Nav Links"
+          name: 'links'
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Path", name: "path", widget: "string" }
     - label: "List of Projects"
       name: "listProjects"
-      file: "content/nav.md"
+      file: "content/listProject.md"
       fields:
-        - { label: "Name", name: "name", widget: "string"}
-        - { label: "Path", name: "path", widget: "string" }
+        - label: 'Projects'
+          name: 'projects'
+          widget: list
+          fields:
+          - { label: "Name", name: "name", widget: "string"}
+          - { label: "Path", name: "path", widget: "string" }
+
 
 
 
