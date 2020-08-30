@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Frames from '../../components/Frames'
 
 
 export default function Project(props){
     //console.log(props)
-    let { title, frames } = props.attributes
+    let { title, subtitle } = props.attributes
     return(
         <>
             <Head>
@@ -12,7 +11,7 @@ export default function Project(props){
             </Head>
             <article>
                 <h1>{title}</h1>
-                <Frames frames={frames}/>
+                <h2>{subtitle}</h2>
                 <div dangerouslySetInnerHTML={{ __html: props.data }} />
             </article>
         </>

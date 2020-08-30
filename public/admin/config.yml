@@ -4,9 +4,9 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
-  - label: "Content"
-    name: "content"
-    folder: "/content"
+  - label: "Landing Pages"
+    name: "landingPages"
+    folder: "/content/landingPages"
     create: true
     fields:
         - { label: "Title", name: "title", widget: "string"}
@@ -30,6 +30,33 @@ collections:
                   fields:
                     - { label: "Title", name: "title", widget: "string"}
                     - { label: "Text", name: "text", widget: "text"}
+  - label: "Projects"
+    name: "projects"
+    folder: "/content/projects"
+    create: true
+    fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Subtitle", name: "subtitle", widget: "string"}
+        - { label: "Image", name: "img", widget: "image", optional: true}
+  
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Nav"
+      name: "nav"
+      file: "content/nav.md"
+      fields:
+        - { label: "Name", name: "name", widget: "string"}
+        - { label: "Path", name: "path", widget: "string" }
+    - label: "List of Projects"
+      name: "listProjects"
+      file: "content/nav.md"
+      fields:
+        - { label: "Name", name: "name", widget: "string"}
+        - { label: "Path", name: "path", widget: "string" }
+
+
+
 
           
 

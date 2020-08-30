@@ -11,5 +11,4 @@ links:
       path: "/about"
     - name: Get Involved
       path: "/about"
-
 ---

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { attributes, html as Content} from '../content/about.md';
+import { attributes, html as Content} from '../content/landingPages/about.md';
 import Frames from '../components/Frames'
 //import { useRouter } from 'next/router'
 
