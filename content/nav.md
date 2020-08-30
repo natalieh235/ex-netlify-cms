@@ -1,4 +1,5 @@
 ---
+title: Nav
 links: 
     - name: About Us
       path: "/about"
