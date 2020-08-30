@@ -1,11 +1,11 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master
 media_folder: public/img
 public_folder: img
 collections:
-  - label: "Posts"
-    name: "posts"
+  - label: "Content"
+    name: "content"
     folder: "/content"
     create: true
     fields:
