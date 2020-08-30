@@ -6,7 +6,7 @@ public_folder: img
 collections:
   - label: "Page"
     name: "page"
-    folder: "pages/posts"
+    folder: "content"
     create: true
     fields:
         - { label: "Title", name: "title", widget: "string"}

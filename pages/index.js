@@ -16,14 +16,14 @@ export default class Home extends Component {
                 <article>
                     <h1>{title}</h1>
 
-                    {frames.map((frame) => (
-                        <>
+                    {frames.map((frame, key) => (
+                        <div key={key}>
                             <p>{frame.subtitle}</p>
                             <h2>{frame.header}</h2>
                             <p>{frame.description}</p>
                             <button>{frame.button}</button>
                             <hr />
-                        </>
+                        </div>
                     ))}
                 </article>
             </Layout>

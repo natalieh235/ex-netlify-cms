@@ -7,8 +7,8 @@ export default function Layout({ children, home }){
     return(
        <>
         <div>
-            {links.map((link) => (
-                <Link href={link.path} className="nav-link">
+            {links.map((link, key) => (
+                <Link href={link.path} key={key}>
                     <a>{link.name}</a>
                 </Link>
             ))}
