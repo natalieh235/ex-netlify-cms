@@ -54,7 +54,7 @@ collections:
             - { label: "Path", name: "path", widget: "string" }
     - label: "List of Projects"
       name: "listProjects"
-      file: "content/listProject.md"
+      file: "content/listProjects.md"
       fields:
         - label: 'Projects'
           name: 'projects'
