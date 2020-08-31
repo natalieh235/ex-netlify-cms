@@ -7,6 +7,15 @@ import Frames from '../components/Frames'
 import Link from 'next/link'
 
 
+// {projects.map((project, key) => (
+//     <div key={key}>
+//         <h2>{'Name: ' + project.name}</h2>
+//         <Link href={'/projects/' + project.path}>
+//             <a>{'See more ->'}</a>
+//         </Link>
+
+//     </div>
+// ))}
 export default function projects() {
 
     let { title, frames, listOfProjects } = attributes
@@ -22,16 +31,13 @@ export default function projects() {
                 <h1>{title}</h1>
                 <Frames frames={frames}/>
 
-                {projects.map((project, key) => (
-                    <div key={key}>
-                        <h2>{'Name: ' + project.name}</h2>
-                        <Link href={'/projects/' + project.path}>
-                            <a>{'See more ->'}</a>
-                        </Link>
 
+                {listOfProjects.map((project, key) => (
+                    <div key={key}>
+                        <h2>{project}</h2>
                     </div>
                 ))}
-                {listOfProjects}
+                
             </article>
         </>
     )
