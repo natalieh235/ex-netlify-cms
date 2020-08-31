@@ -31,12 +31,12 @@ export default function projects() {
                 <h1>{title}</h1>
                 <Frames frames={frames}/>
 
+                {listOfProjects ? (listOfProjects.map((box, k) => (
+                        <div key={k}>
+                            <h2>{project}</h2>
+                        </div>
+                    ))) : <></> }
 
-                {listOfProjects.map((project, key) => (
-                    <div key={key}>
-                        <h2>{project}</h2>
-                    </div>
-                ))}
                 
             </article>
         </>
