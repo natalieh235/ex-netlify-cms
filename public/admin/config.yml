@@ -19,8 +19,8 @@ collections:
               widget: list
               fields:
                 - { label: "Header", name: "header", widget: "string"}
-                - { label: "Subtitle", name: "subtitle", widget: "string"}
-                - { label: "Button", name: "button", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - { label: "Button", name: "button", widget: "string", required: false}
                 - { label: "Description", name: "description", widget: "text"}
                 - { label: "Image", name: "img", widget: "image", required: false}
                 - label: "text-boxes"
@@ -32,13 +32,17 @@ collections:
                     - { label: "Text", name: "text", widget: "text"}
         - label: "All Projects"
           name: "listOfProjects"
-          widget: "relation"
-          collection: "projects"
-          searchFields: ["title"]
-          valueField: "title"
-          displayFields: ["title", "subtitle"]  
-          required: false 
-          mutiple: true     
+          widget: list
+          fields:    
+            - label: "Project Relation"
+              name: "projectRelation"
+              widget: "relation"
+              collection: "projects"
+              searchFields: ["title"]
+              valueField: "title"
+              displayFields: ["title", "subtitle"]  
+              required: false 
+              mutiple: true     
   - label: "Projects"
     name: "projects"
     folder: "/content/projects"
