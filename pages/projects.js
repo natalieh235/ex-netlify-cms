@@ -6,9 +6,6 @@ import Frames from '../components/Frames'
 import Link from 'next/link'
 
 
-
-
-
 export default function projects(props) {
 
     let { title, frames } = attributes
@@ -24,6 +21,9 @@ export default function projects(props) {
             {props ? (props.p.map((project, k) => (
                 <div key={k}>
                     <h2>{project.attributes.title}</h2>
+                    <Link href={'/projects/' + project.attributes.path}>
+                        <a>{'See more ->'}</a>
+                    </Link>
                 </div>
             ))) : <></> }
                                 
