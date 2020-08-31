@@ -37,7 +37,8 @@ collections:
           searchFields: ["title"]
           valueField: "title"
           displayFields: ["title"]  
-          required: false      
+          required: false 
+          mutiple: true     
   - label: "Projects"
     name: "projects"
     folder: "/content/projects"

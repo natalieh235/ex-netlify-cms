@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export default function projects() {
 
-    let { title, frames } = attributes
+    let { title, frames, listOfProjects } = attributes
 
     let { projects } = ProjAttributes
 
@@ -31,7 +31,7 @@ export default function projects() {
 
                     </div>
                 ))}
-                
+                {listOfProjects}
             </article>
         </>
     )
