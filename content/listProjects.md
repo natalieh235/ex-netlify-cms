@@ -4,7 +4,7 @@ projects:
     path: ex
   - name: Rex
     path: rex
-  - name: Test
-    path: test
+  - name: Bad
+    path: Bad
 ---
 
