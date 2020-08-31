@@ -2,6 +2,7 @@
 title: Project Dashboard
 projects: 
     - name: Ex
-      path: "/projects/ex"
-
+      path: "ex"
+    - name: Rex
+      path: "rex"
 ---

@@ -24,9 +24,9 @@ export default function projects() {
 
                 {projects.map((project, key) => (
                     <div key={key}>
-                        <h2>{'Name:' + project.name}</h2>
-                        <Link href={project.path}>
-                            <a>{'Explore ->'}</a>
+                        <h2>{'Name: ' + project.name}</h2>
+                        <Link href={'/projects/' + project.path}>
+                            <a>{'See more ->'}</a>
                         </Link>
 
                     </div>

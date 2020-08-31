@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import { attributes } from '../../content/listProjects.md'
 
 
 export default function Project(props){
-    //console.log(props)
+    
     let { title, subtitle } = props.attributes
     return(
         <>
@@ -19,23 +20,28 @@ export default function Project(props){
 }
 
 export async function getStaticPaths() {
+
+    let paths = attributes.projects.map(project => {
+        return {
+          params: {proj: project.path.replace(/\.md$/, '')}
+        }
+    })
+
     return {
-        paths: [
-          { params: { proj: 'ex' } }
-        ],
+        paths,
         fallback: false
-      }
+    }
   }
   
-  export async function getStaticProps({ params }) {
-    let title = params.proj;
-    const { attributes, html } = await import(`../../content/projects/${title}.md`)
+  export async function getStaticProps(context) {
+    console.log(context)
+
+    const { attributes, html } = await import(`../../content/projects/${context.params.proj}.md`)
 
     return {
         props: {
           attributes: attributes,
           data: html
-
         }
       }
   }
