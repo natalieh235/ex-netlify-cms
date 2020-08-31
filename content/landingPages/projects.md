@@ -19,8 +19,6 @@ frames:
     header: Our Projects
     subtitle: a
     type: standard
-listOfProjects:
-  - projectRelation: Bad
-  - projectRelation: TWO TEST
+
 ---
 

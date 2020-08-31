@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import { attributes } from '../../content/listProjects.md'
-
 
 export default function Project(props){
     
@@ -16,14 +14,19 @@ export default function Project(props){
                 <div dangerouslySetInnerHTML={{ __html: props.data }} />
             </article>
         </>
+
     )
 }
 
 export async function getStaticPaths() {
+    const testFolder = './content/projects/';
+    const fs = require('fs')
 
-    let paths = attributes.projects.map(project => {
+    const fileNames = await fs.promises.readdir(testFolder);
+
+    let paths = fileNames.map(file => {
         return {
-          params: {proj: project.path.replace(/\.md$/, '')}
+            params: {proj: file.replace(/\.md$/, '')}
         }
     })
 
@@ -33,9 +36,8 @@ export async function getStaticPaths() {
     }
   }
   
+  
   export async function getStaticProps(context) {
-    console.log(context)
-
     const { attributes, html } = await import(`../../content/projects/${context.params.proj}.md`)
 
     return {
@@ -43,5 +45,5 @@ export async function getStaticPaths() {
           attributes: attributes,
           data: html
         }
-      }
+    }
   }

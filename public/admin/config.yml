@@ -30,28 +30,16 @@ collections:
                   fields:
                     - { label: "Title", name: "title", widget: "string"}
                     - { label: "Text", name: "text", widget: "text"}
-        - label: "All Projects"
-          name: "listOfProjects"
-          widget: list
-          required: false
-          fields:    
-            - label: "Project Relation"
-              name: "projectRelation"
-              widget: "relation"
-              collection: "projects"
-              searchFields: ["title"]
-              valueField: "title"
-              displayFields: ["title", "subtitle"]  
-              required: false 
-              mutiple: true     
   - label: "Projects"
     name: "projects"
     folder: "/content/projects"
     create: true
     fields:
         - { label: "Title", name: "title", widget: "string"}
-        - { label: "Subtitle", name: "subtitle", widget: "string"}
+        - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - { label: "Path", name: "path", widget: "string"}
         - { label: "Image", name: "img", widget: "image", required: false}
+        - { label: "Body", name: "body", widget: "markdown"}
         
   - name: "pages"
     label: "Pages"
@@ -66,17 +54,6 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Path", name: "path", widget: "string" }
-    - label: "List of Projects"
-      name: "listProjects"
-      file: "content/listProjects.md"
-      fields:
-        - label: 'Projects'
-          name: 'projects'
-          widget: list
-          fields:
-          - { label: "Name", name: "name", widget: "string"}
-          - { label: "Path", name: "path", widget: "string" }
-  
 
 
 

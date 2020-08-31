@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import Frames from '../components/Frames'
 
 
+
 export default function Home(){
     console.log(HomeContent)
     let { title, frames } = attributes
