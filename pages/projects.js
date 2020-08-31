@@ -20,6 +20,7 @@ export default function projects() {
 
     let { title, frames, listOfProjects } = attributes
 
+    console.log(listOfProjects)
     let { projects } = ProjAttributes
 
     return(
@@ -33,7 +34,7 @@ export default function projects() {
 
                 {listOfProjects ? (listOfProjects.map((project, k) => (
                         <div key={k}>
-                            <h2>{project}</h2>
+                            <h2>{project.projectRelation}</h2>
                         </div>
                     ))) : <></> }
 
