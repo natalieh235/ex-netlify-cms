@@ -37,8 +37,14 @@ collections:
     fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Subtitle", name: "subtitle", widget: "string"}
-        - { label: "Image", name: "img", widget: "image", optional: true}
-  
+        - { label: "Image", name: "img", widget: "image", required: false}
+        - label: "All Projects"
+          name: "listOfProjects"
+          widget: "relation"
+          collection: "projects"
+          searchFields: ["title"]
+          valueField: "title"
+          displayFields: ["title"]  
   - name: "pages"
     label: "Pages"
     files:
@@ -62,13 +68,7 @@ collections:
           fields:
           - { label: "Name", name: "name", widget: "string"}
           - { label: "Path", name: "path", widget: "string" }
-    - label: "All Projects"
-      name: "listOfProjects"
-      widget: "relation"
-      collection: "projects"
-      searchFields: ["title"]
-      valueField: "title"
-      displayFields: ["title"]
+  
 
 
 
