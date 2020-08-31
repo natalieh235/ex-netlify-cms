@@ -14,6 +14,14 @@ export default function Layout({ children, home }){
             ))}
         </div>
         {children}
+        <footer>
+            <h1>{'Bit Project'}</h1>
+            {links.map((link, key) => (
+                <Link href={link.path} key={key}>
+                    <a>{link.name}</a>
+                </Link>
+            ))}
+        </footer>
        </>
     )
 }

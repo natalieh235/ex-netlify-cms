@@ -10,5 +10,5 @@ links:
     - name: Blog
       path: "/about"
     - name: Get Involved
-      path: "/about"
+      path: "/involve"
 ---

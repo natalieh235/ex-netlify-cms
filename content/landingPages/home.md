@@ -17,4 +17,11 @@ frames:
       subtitle: Build with Bit
       description: We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.
       button: Get Involved ->
+      textbox: 
+        - title: Software Engineering Bootcamps
+          text: blah blah
+        - title: Technical and Professional Development Workshops
+          text: blah blah
+        - title: huh?
+          text: blah blah
 ---
