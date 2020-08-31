@@ -30,14 +30,14 @@ collections:
                   fields:
                     - { label: "Title", name: "title", widget: "string"}
                     - { label: "Text", name: "text", widget: "text"}
-                - label: "All Projects"
-                  name: "listOfProjects"
-                  widget: "relation"
-                  collection: "projects"
-                  searchFields: ["title"]
-                  valueField: "title"
-                  displayFields: ["title"]  
-                  required: false
+        - label: "All Projects"
+          name: "listOfProjects"
+          widget: "relation"
+          collection: "projects"
+          searchFields: ["title"]
+          valueField: "title"
+          displayFields: ["title"]  
+          required: false      
   - label: "Projects"
     name: "projects"
     folder: "/content/projects"
