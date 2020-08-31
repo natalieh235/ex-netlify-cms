@@ -33,6 +33,7 @@ collections:
         - label: "All Projects"
           name: "listOfProjects"
           widget: list
+          required: false
           fields:    
             - label: "Project Relation"
               name: "projectRelation"
