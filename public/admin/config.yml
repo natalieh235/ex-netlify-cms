@@ -62,6 +62,13 @@ collections:
           fields:
           - { label: "Name", name: "name", widget: "string"}
           - { label: "Path", name: "path", widget: "string" }
+    - label: "All Projects"
+      name: "listOfProjects"
+      widget: "relation"
+      collection: "projects"
+      searchFields: ["title"]
+      valueField: "title"
+      displayFields: ["title"]
 
 
 
