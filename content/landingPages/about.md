@@ -6,14 +6,21 @@ frames:
       subtitle: 
       description: We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.
       button: Read more in our blog ->
-    - type: standard
+    - type: text-boxes
       header: Our Values
       subtitle: How we operate
       description: blah balh
-      textbox: 
+      boxes: 
         - title: 1. Mission First
           text: blah blah
         - title: 2. Perpetual Growth
           text: blah blah
-    
+    - type: 'team-page'
+      header: 'Our Team'
+      description: 'da team'
+      button-text: 'Open Positions ->'
+      button-path: ''
+      profiles:
+        - name: 'Laura Smith'
+          position: 'Developer Advocate'   
 ---
