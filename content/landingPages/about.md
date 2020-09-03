@@ -5,7 +5,9 @@ frames:
       header: We empower students to break into tech.
       subtitle: 
       description: We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.
-      button: Read more in our blog ->
+      buttons:
+        - button-text: Read more in our blog ->
+          button-path: ''
     - type: text-boxes
       header: Our Values
       subtitle: How we operate
@@ -18,9 +20,11 @@ frames:
     - type: 'team-page'
       header: 'Our Team'
       description: 'da team'
-      button-text: 'Open Positions ->'
-      button-path: ''
+      buttons:
+        - button-text: Open Positions ->
+          button-path: ''
       profiles:
         - name: 'Laura Smith'
           position: 'Developer Advocate'   
+          img: 'profile.jpg'
 ---

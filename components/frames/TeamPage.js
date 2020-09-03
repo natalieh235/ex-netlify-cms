@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Card2(props){
+export default function TeamPage(props){
     let frame = props.frame;
     
     return(    
@@ -10,18 +10,16 @@ export default function Card2(props){
             <p>{frame.description}</p>
             {frame.buttons ? (frame.buttons.map((button, key) => (
                 <div key={key}>
-                    <Link href={'/' + button['button-path']} key={key}>
+                    <Link href='/' key={key}>
                         <a>{button['button-text']}</a>
                     </Link>
                 </div>
             ))) : <></> }
-            {frame.cards ? (frame.cards.map((card, key) => (
+            {frame.profiles ? (frame.profiles.map((profile, key) => (
                 <div key={key}>
-                    {card.title}
-                    {card.description}
-                    <Link href={'/' + button['button-path']} key={key}>
-                        <a>{card['button-text']}</a>
-                    </Link>
+                    <img src={'img/' + profile.img}></img>
+                    {profile.name}
+                    {profile.position}
                 </div>
             ))) : <></> }
             <hr />

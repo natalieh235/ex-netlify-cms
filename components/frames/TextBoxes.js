@@ -1,7 +1,7 @@
 export default function TextBoxes(props){
     let frame = props.frame;
     return(    
-        <div key={frame.type}>
+        <div>
             <p>{frame.subtitle}</p>
             <h2>{frame.header}</h2>
             <p>{frame.description}</p>

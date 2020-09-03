@@ -1,22 +1,25 @@
+import Link from 'next/link'
+
 export default function Card1(props){
     let frame = props.frame;
+    
     return(    
-        <div key={frame.type}>
+        <div>
             <p>{frame.subtitle}</p>
             <h2>{frame.header}</h2>
             <p>{frame.description}</p>
-            {frame.buttons ? (frame.buttons.map((button, k) => (
-                <div key={k}>
-                    <Link href={button['button-path']} key={key}>
+            {frame.buttons ? (frame.buttons.map((button, key) => (
+                <div key={key}>
+                    <Link href='/' key={key}>
                         <a>{button['button-text']}</a>
                     </Link>
                 </div>
             ))) : <></> }
-            {frame.cards ? (frame.cards.map((card, k) => (
-                <div key={k}>
+            {frame.cards ? (frame.cards.map((card, key) => (
+                <div key={key}>
                     {card.title}
                     {card.description}
-                    <Link href={card['button-path']} key={key}>
+                    <Link href='/' key={key}>
                         <a>{card['button-text']}</a>
                     </Link>
                 </div>

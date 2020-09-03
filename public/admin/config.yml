@@ -35,8 +35,13 @@ collections:
               fields:
                 - { label: "Header", name: "header", widget: "string"}
                 - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
-                - {label: 'Button Text', name: 'button-text', widget: "string"}
-                - {label: 'Button Path', name: 'button-path', widget: "string"}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
                 - { label: "Description1", name: "description-1", widget: "text"}
                 - { label: "Description2", name: "description-2", widget: "text"}
                 - { label: "Image", name: "img", widget: "image", required: false}
@@ -113,8 +118,13 @@ collections:
               fields:
                 - { label: "Header", name: "header", widget: "string"}
                 - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
-                - {label: 'Button Text', name: 'button-text', widget: "string"}
-                - {label: 'Button Path', name: 'button-path', widget: "string"} 
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"} 
                 - { label: "Description", name: "description", widget: "text"}
                 - label: "Profiles"
                   name: "profiles"
