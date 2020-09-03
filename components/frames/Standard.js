@@ -2,8 +2,6 @@ import Link from 'next/link'
 
 export default function Standard(props){
     let frame = props.frame;
-    console.log('here')
-    console.log(frame.buttons[0]['button-path'])
     return(    
         <div>
             <p>{frame.subtitle}</p>

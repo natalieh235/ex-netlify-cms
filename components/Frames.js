@@ -8,7 +8,6 @@ import TeamPage from './frames/TeamPage'
 export default function Frames(props){
 
     let allFrames = props.frames.map((frame, key) => {
-        console.log(frame.type)
         switch (frame.type) {
             case 'standard':
                 return <Standard frame={frame} key={key}/>
