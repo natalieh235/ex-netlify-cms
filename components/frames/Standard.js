@@ -20,7 +20,6 @@ export default function Standard(props){
                     </Link>
                 </div>
             ))) : <></> }
-            <hr />
             <br />
                 </div>
                 <div class="flex flex-col xs:mt-5">

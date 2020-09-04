@@ -22,7 +22,6 @@ export default function TeamPage(props){
                     {profile.position}
                 </div>
             ))) : <></> }
-            <hr />
             <br />
         </div>
 

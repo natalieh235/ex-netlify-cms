@@ -16,7 +16,6 @@ export default function TwoDescriptions(props){
                     </Link>
                 </div>
             ))) : <></> }
-            <hr />
             <br />
         </div>
 

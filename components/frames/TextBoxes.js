@@ -16,7 +16,6 @@ export default function TextBoxes(props){
                     <p>{box.text}</p>
                 </div>
             ))) : <></> }
-            <hr />
             <br />
         </div>
 

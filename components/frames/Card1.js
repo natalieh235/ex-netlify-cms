@@ -24,7 +24,6 @@ export default function Card1(props){
                     </Link>
                 </div>
             ))) : <></> }
-            <hr />
             <br />
         </div>
 
