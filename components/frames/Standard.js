@@ -9,6 +9,7 @@ export default function Standard(props){
         <div class="sm:flex">
             <div class="sm:w-full sm:px-8 flex flex-col lg:flex-row md:flex-col justify-between mt-8 ml-2 ">
                 <div class="flex flex-col mb-4 space-y-4">
+                    <p>{frame.subtitle}</p>
                     <h2 className="font-bold text-3xl gradient bg-purple-600">{frame.header}</h2>
                     <p className="">{frame.description}</p>
                     {frame.buttons ? (frame.buttons.map((button, key) => (

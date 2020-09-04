@@ -1,4 +1,5 @@
 ---
+title: Home
 frames: 
     - type: standard
       header: We are a community of Future Tech Leaders
