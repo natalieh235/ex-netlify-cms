@@ -9,7 +9,7 @@ frames:
           button-path: ''
         - button-text: Join our Program ›
           button-path: ''
-      img: /img/bitcamp.png
+      img: /img/develop.svg
     - type: two-descriptions
       header: Learning Together
       subtitle: While we teach, we learn

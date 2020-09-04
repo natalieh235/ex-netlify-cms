@@ -17,7 +17,7 @@ export default function TeamPage(props){
             ))) : <></> }
             {frame.profiles ? (frame.profiles.map((profile, key) => (
                 <div key={key}>
-                    <img src={profile.img}></img>
+                    <img width="200" src={profile.img}></img>
                     {profile.name}
                     {profile.position}
                 </div>

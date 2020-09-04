@@ -9,7 +9,7 @@ frames:
       together disparate systems or spend months integrating payments
       functionality.
     header: We empower students to break into tech.
-    img: /img/diversity.png
+    img: /img/coding.svg
     subtitle: null
     type: standard
   - boxes:
@@ -27,7 +27,7 @@ frames:
     description: da team
     header: Our Team
     profiles:
-      - img: /img/profile.jpg
+      - img: /img/profile.svg
         name: Laura Smith
         position: Developer Advocate
     type: team-page
