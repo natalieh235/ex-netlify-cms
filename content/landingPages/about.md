@@ -27,7 +27,7 @@ frames:
     description: da team
     header: Our Team
     profiles:
-      - img: profile.jpg
+      - img: /img/profile.jpg
         name: Laura Smith
         position: Developer Advocate
     type: team-page
