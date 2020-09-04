@@ -13,7 +13,6 @@ export default function About(){
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <article>
-                <h1>{title}</h1>
                 <Frames frames={frames}/>
                 
             </article>

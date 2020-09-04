@@ -15,7 +15,6 @@ export default function projects(props) {
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <article>
-                <h1>{title}</h1>
                 <Frames frames={frames}/>
 
             {props ? (props.p.map((project, k) => (
