@@ -19,6 +19,9 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.6.0"
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "frontmatter-markdown-loader": "^3.6.0",
+    "tailwindcss": "^1.7.6"
   }
 }

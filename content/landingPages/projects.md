@@ -1,5 +1,4 @@
 ---
-title: Projects
 frames:
   - buttons:
         - button-text: Build with Bit->

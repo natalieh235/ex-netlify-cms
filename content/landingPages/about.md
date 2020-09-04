@@ -1,5 +1,4 @@
 ---
-title: About
 frames: 
     - type: standard
       header: We empower students to break into tech.

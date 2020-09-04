@@ -1,5 +1,4 @@
 ---
-title: Get Involved
 frames: 
     - type: standard
       header: Level Up your Skills
