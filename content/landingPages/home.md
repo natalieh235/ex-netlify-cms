@@ -12,6 +12,7 @@ frames:
       functionality.
     header: We are a community of Future Tech Leaders
     image: diversity.png
+    img: /img/diversity.png
     subtitle: null
     type: standard
   - buttons:
