@@ -12,7 +12,7 @@ export default function Standard(props){
                     <h2 className="font-bold text-3xl gradient bg-purple-600">{frame.header}</h2>
                     <p className="">{frame.description}</p>
                     {frame.buttons ? (frame.buttons.map((button, key) => (
-                    <div className="" key={key}>
+                    <div className="py-1" key={key}>
                         <Link href={ '/' + button[ 'button-path']}>
                         <a className="py-2 px-1 bg-transparent text-purple-600 font-semibold border border-purple-600 rounded hover:bg-purple-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform">{button['button-text']}</a>
                         </Link>
