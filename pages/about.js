@@ -1,3 +1,4 @@
+  
 import Head from 'next/head'
 import { attributes, html as Content} from '../content/landingPages/about.md';
 import Frames from '../components/Frames'
@@ -19,4 +20,3 @@ export default function About(){
         </Layout>
     )
 }
-

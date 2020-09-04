@@ -1,3 +1,4 @@
+  
 import Head from 'next/head'
 import { attributes, html as Content} from '../content/landingPages/involve.md';
 import Frames from '../components/Frames'
@@ -17,4 +18,3 @@ export default function Involve(){
         </Layout>
     )
 }
-

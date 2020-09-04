@@ -1,3 +1,4 @@
+  
 import Head from 'next/head'
 import { Component } from 'react'
 import { attributes, html as HomeContent } from '../content/landingPages/home.md';
@@ -21,4 +22,3 @@ export default function Home(){
         </Layout>
     )
 }
-

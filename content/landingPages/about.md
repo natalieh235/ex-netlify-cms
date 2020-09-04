@@ -9,7 +9,7 @@ frames:
       together disparate systems or spend months integrating payments
       functionality.
     header: We empower students to break into tech.
-    img: /img/screen-shot-2020-07-21-at-2.02.32-pm.png
+    img: /img/diversity.png
     subtitle: null
     type: standard
   - boxes:
