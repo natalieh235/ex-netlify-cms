@@ -23,7 +23,7 @@ export default function Standard(props){
             <br />
                 </div>
                 <div class="flex flex-col xs:mt-5">
-                {frame.img ? <img src={''}/> : <></>}
+                {frame.img ? <img src={frame.image}/> : <></>}
                 <svg width="622" height="400" viewBox="0 0 622 400" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M404.646 249.013C520.619 249.013 614.634 233.725 614.634 214.866C614.634 196.008 520.619 180.72 404.646 180.72C288.672 180.72 194.657 196.008 194.657 214.866C194.657 233.725 288.672 249.013 404.646 249.013Z" fill="#E3EEF1"/>

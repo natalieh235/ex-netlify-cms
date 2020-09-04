@@ -8,7 +8,7 @@ export default function TwoDescriptions(props){
             <h2>{frame.header}</h2>
             <p>{frame.description1}</p>
             <p>{frame.description2}</p>
-            {frame.img ? <img src={''}/> : <></>}
+            {frame.img ? <img src={frame.img}/> : <></>}
             {frame.buttons ? (frame.buttons.map((button, key) => (
                 <div key={key}>
                     <Link href={'/' + button['button-path']}>
