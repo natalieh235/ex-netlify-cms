@@ -35,13 +35,9 @@ frames:
       - button-path: about
         button-text: Get Involved ›
     cards:
-      - Description: description
-        Title: Software Engineering Bootcamps
-        description: description
+      - description: description
         title: Software Engineering Bootcamps
-      - Description: description
-        Title: Professional Development Workshops
-        description: description
+      - description: description
         title: Professional Development Workshops
     description: >-
       We agonize over the right abstractions so your teams don’t need to stitch
