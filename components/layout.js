@@ -44,7 +44,7 @@ export default function Layout({ children, home }){
                 <a className="font-medium lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-purple-600 mr-2">{link.name}</a>
                 </Link>
                 ))}
-                <a href="involve" className="py-1 px-1 bg-transparent text-purple-600 font-semibold border border-purple-600 rounded hover:bg-purple-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform">Get Involved ›</a>
+                <a href="involve" className="py-1 px-1 mb-1 bg-transparent text-purple-600 font-semibold border border-purple-600 rounded hover:bg-purple-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform">Get Involved ›</a>
             </ul>
         </nav>
 
