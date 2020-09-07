@@ -35,10 +35,15 @@ frames:
       - button-path: about
         button-text: Get Involved ›
     cards:
-      - description: description
-        title: Software Engineering Bootcamps
-      - description: description
-        title: Professional Development Workshops
+      - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title: Title 1
+        button-text: Join this Project ›
+      - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title: Title 2
+        button-text: Join this Project ›
+      - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title: Title 3
+        button-text: Join this Project ›
     description: >-
       We agonize over the right abstractions so your teams don’t need to stitch
       together disparate systems or spend months integrating payments
