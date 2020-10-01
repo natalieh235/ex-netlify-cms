@@ -3,13 +3,13 @@ title: About
 frames:
   - buttons:
       - button-path: about
-        button-text: Read more in our blog ›
+        button-text: Read more in our blog ->
     description: >-
       We agonize over the right abstractions so your teams don’t need to stitch
       together disparate systems or spend months integrating payments
       functionality.
     header: We empower students to break into tech.
-    img: /img/coding.svg
+    img: /img/diversity.png
     subtitle: null
     type: standard
   - boxes:
@@ -23,11 +23,11 @@ frames:
     type: text-boxes
   - buttons:
       - button-path: about
-        button-text: Open Positions ›
+        button-text: Open Positions ->
     description: da team
     header: Our Team
     profiles:
-      - img: /img/profile.svg
+      - img: /img/profile.jpg
         name: Laura Smith
         position: Developer Advocate
     type: team-page
