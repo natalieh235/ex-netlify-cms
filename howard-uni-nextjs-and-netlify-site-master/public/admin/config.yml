@@ -1,0 +1,167 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: public/img
+public_folder: img
+collections:
+  - label: "Landing Pages"
+    name: "landingPages"
+    folder: "/content/landingPages"
+    create: true
+    fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - label: "Frames"
+          name: "frames"
+          widget: list
+          types:
+            - label: "Standard"
+              name: "standard"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Image", name: "img", widget: "image", required: false}
+            - label: "Two Descriptions"
+              name: "two-descriptions"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
+                - { label: "Description1", name: "description-1", widget: "text"}
+                - { label: "Description2", name: "description-2", widget: "text"}
+                - { label: "Image", name: "img", widget: "image", required: false}
+            - label: "Card Type 1"
+              name: "card-type-1"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - label: "Cards"
+                  name: "cards"
+                  widget: list
+                  fields:
+                    - {label: "Title", name: 'title', widget: 'string'}
+                    - {label: "Description", name: "description", widget: "text"}
+                    - {label: 'Image', name: 'img', widget: 'image', required: false}
+                    - {label: 'Button Text', name: 'button-text', widget: "string", required: false}
+                    - {label: 'Button Path', name: 'button-path', widget: "string", required: false}
+            - label: "Card Type 2"
+              name: "card-type-2"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - {label: 'Image', name: 'img', widget: 'image', required: false}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - label: "Cards"
+                  name: "cards"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: "Title", name: 'title', widget: 'string'}
+                    - {label: "Description", name: "description", widget: "text"}
+                    - {label: 'Image', name: 'img', widget: 'image', required: false}
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"}
+            - label: "Text Boxes"
+              name: "text-boxes"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - { label: "Description", name: "description", widget: "text"}
+                - label: "images"
+                  name: 'images'
+                  widget: list
+                  required: false
+                  fields:
+                    { label: "Image", name: "img", widget: "image"}
+                - label: "Text Boxes"
+                  name: "boxes"
+                  widget: list
+                  fields:
+                    - { label: "Title", name: "title", widget: "string"}
+                    - { label: "Text", name: "text", widget: "text"}
+            - label: "Team Page"
+              name: "team-page"
+              widget: list
+              fields:
+                - { label: "Header", name: "header", widget: "string"}
+                - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                - label: "buttons"
+                  name: "buttons"
+                  widget: list
+                  required: false
+                  fields:
+                    - {label: 'Button Text', name: 'button-text', widget: "string"}
+                    - {label: 'Button Path', name: 'button-path', widget: "string"} 
+                - { label: "Description", name: "description", widget: "text"}
+                - label: "Profiles"
+                  name: "profiles"
+                  widget: list
+                  fields:
+                    - {label: 'Image', name: 'img', widget: 'image', required: false}
+                    - {label: 'Name', name: 'name', widget: "string"}
+                    - {label: 'Position', name: 'position', widget: "string"}        
+  - label: "Projects"
+    name: "projects"
+    folder: "/content/projects"
+    create: true
+    fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Subtitle", name: "subtitle", widget: "string", required: false}
+        - { label: "Path", name: "path", widget: "string"}
+        - { label: "Image", name: "img", widget: "image", required: false}
+        - { label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Nav"
+      name: "nav"
+      file: "content/nav.md"
+      fields:
+        - label: "Nav Links"
+          name: 'links'
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Path", name: "path", widget: "string" }
+
+
+
+
+
+          
+
+    
+

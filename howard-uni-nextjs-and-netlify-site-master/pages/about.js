@@ -1,0 +1,22 @@
+  
+import Head from 'next/head'
+import { attributes, html as Content} from '../content/landingPages/about.md';
+import Frames from '../components/Frames'
+import Layout from '../components/layout'
+
+export default function About(){
+
+
+    let { title, frames } = attributes
+    return (
+        <Layout>
+            <Head>
+                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            </Head>
+            <article>
+                <Frames frames={frames}/>
+                
+            </article>
+        </Layout>
+    )
+}
